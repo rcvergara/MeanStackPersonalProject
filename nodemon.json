@@ -1,0 +1,6 @@
+{
+    "env": {
+        "APP_PORT": 5000,
+        "CON_STRING": "mongodb+srv://admin:admin123@cluster0-cq9kp.mongodb.net/test?retryWrites=true&w=majority"
+    }
+}
