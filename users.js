@@ -1,20 +1,9 @@
-const USERS = [
-    
-    {
-        username: "jekjek",
-        name: "dan",
-        password: "12345"
-    },
-    {
-        username: "admin",
-        name: "admin",
-        password: "12345"
-    },
-    {
-        username: "kuyaSar",
-        name: "Cy",
-        password: "12345"
-    },
-];
+const mongoose = require('mongoose');
 
-module.exports = USERS;
+const UserSchema = mongoose.Schema({
+    username: String,
+    name: String,
+    password: String
+});
+
+module.exports = mongoose.model('User', UserSchema);
